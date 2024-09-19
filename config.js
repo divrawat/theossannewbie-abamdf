@@ -1,4 +1,4 @@
-export const DOMAIN = 'http://localhost:3000';
+export const DOMAIN = 'https://the-ossan-newbie-adventurer.pages.dev';
 // export const DOMAIN = 'https://iparryeverything.site';
 
 export const DOMAIN_NAME = 'iparryeverything.site';
@@ -29,7 +29,7 @@ export const URL_PREFIX = 'chapter';
 
 export const AUTHOR_PAGE = `${DOMAIN}/the-ossan-newbie-adventurer-team`;
 export const LOGO_URL = `${DOMAIN}/logo.webp`;
-export const COVE_webp = `${DOMAIN}/cover1.webp`;
+export const COVER_IMG = `${DOMAIN}/cover1.webp`;
 export const BEHIND_COVER_IMG = "";
 
 
