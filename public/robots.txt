@@ -1,0 +1,4 @@
+user-agent: *
+Disallow: /admin/
+
+Sitemap: https://iparryeverything.site/sitemap.xml
