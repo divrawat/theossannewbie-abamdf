@@ -84,9 +84,10 @@ export const navLinks = [
 export const FooterLinks = [
     { text: 'About', href: `${DOMAIN}/about` },
     { text: 'Contact', href: `${DOMAIN}/contact` },
-    // { text: 'Disclaimer', href: `${DOMAIN}/disclaimer` },
-    // { text: 'Privacy Policy', href: `${DOMAIN}/privacy-policy` },
-    // { text: 'Terms & Conditions', href: `${DOMAIN}/terms-and-conditions` }
+    { text: 'Disclaimer', href: `${DOMAIN}/disclaimer` },
+    { text: 'Privacy Policy', href: `${DOMAIN}/privacy-policy` },
+    { text: 'Terms & Conditions', href: `${DOMAIN}/terms-and-conditions` },
+    { text: 'Sitemap', href: `${DOMAIN}/sitemap.xml` }
 ];
 
 
