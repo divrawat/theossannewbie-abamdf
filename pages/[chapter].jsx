@@ -214,7 +214,7 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
     const whatsappUrl = `https://api.whatsapp.com/send?text=${encodedTitle} ${encodedUrl}`;
     const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
     const twitterUrl = `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`;
-    const telegramUrl = `https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`;
+    const telegramUrl = `https://telegram.me/share/url?url=${encodedUrl}&text=${encodedTitle}`;
     const redditUrl = `https://www.reddit.com/submit?url=${encodedUrl}&title=${encodedTitle}`;
 
 
