@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import { DOMAIN, MANGA_NAME, MANGA_DESCRIPTION, MANGA_AUTHOR, MANGA_RELEASE, MANGA_STATUS, MANGA_ARTIST, MANGA_STUDIO, MANGA_GENRE, APP_DESCRIPTION, APP_NAME, MANGA_SUMMARY, COVER_IMG, AUTHOR_PAGE, LOGO_URL, URL_PREFIX, chaptersData, BEHIND_COVER_IMG, RelatedMangaLinks, DOMAIN_NAME, MANGA_TYPE, HEADER_MANGA_DESC, last5chapters } from "@/config";
 import Head from "next/head";
+import { useEffect, useState } from "react";
 
 export default function Home() {
 
@@ -157,6 +158,16 @@ export default function Home() {
   };
 
 
+  useEffect(() => {
+    var ads = document.getElementsByClassName('adsbygoogle').length;
+    for (var i = 0; i < ads; i++) {
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) { }
+    }
+  }, []);
+
+
   return (
     <>
       {head()}
@@ -164,6 +175,13 @@ export default function Home() {
       <article>
 
 
+        <ins className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-1721485376950080"
+          data-ad-slot="9515651808"
+          data-ad-format="auto"
+          data-full-width-responsive="true">
+        </ins>
 
 
         <div className='max-w-[1200px] mx-auto md:flex rounded-md md:gap-[80px] bg-[black] mt-8 border border-[#373737] text-[white]'>
@@ -201,18 +219,19 @@ export default function Home() {
 
 
 
-
-
-
-
-
-
         <h2 id="readmanga" className="font-extrabold text-3xl my-10 px-4 text-center">
           <Link href={DOMAIN} className="hover:underline text-[white]">{`Read ${MANGA_NAME} Manga Online`}</Link>
         </h2>
 
 
 
+        <ins className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-1721485376950080"
+          data-ad-slot="9515651808"
+          data-ad-format="auto"
+          data-full-width-responsive="true">
+        </ins>
 
 
         <div className='mx-6'>
@@ -236,6 +255,13 @@ export default function Home() {
 
 
 
+        <ins className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-1721485376950080"
+          data-ad-slot="9515651808"
+          data-ad-format="auto"
+          data-full-width-responsive="true">
+        </ins>
 
 
 
@@ -261,6 +287,15 @@ export default function Home() {
           ))}
         </div>
 
+
+
+        <ins className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-1721485376950080"
+          data-ad-slot="9515651808"
+          data-ad-format="auto"
+          data-full-width-responsive="true">
+        </ins>
 
 
         <h2 className="text-3xl text-white text-center my-5">{`${MANGA_NAME} Images`}</h2>

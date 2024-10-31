@@ -10,6 +10,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaRedditAlien } from "react-icons/fa";
+import { useEffect, useState } from 'react';
 export const runtime = 'experimental-edge';
 
 export default function Chapter({ chapterNumber, imageUrls, totalChapters, params, errorcode }) {
@@ -248,6 +249,17 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
             {head()}
             <Navbar />
             <article>
+
+                <ins className="adsbygoogle"
+                    style={{ display: 'block' }}
+                    data-ad-client="ca-pub-1721485376950080"
+                    data-ad-slot="9515651808"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true">
+                </ins>
+
+
+
                 <h1 className="text-3xl font-bold text-center text-[white] px-5 pt-5 md:my-5">{`${MANGA_NAME} Chapter ${chapterNumber}`}</h1>
 
                 <div className='flex justify-center px-5 text-[#85e1e6] text-[13px] mb-5'>
@@ -322,13 +334,45 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
                     </div>
                 </div>
 
-                <div className='max-w-[1200px] mx-auto mb-5'>
+                {/* <div className='max-w-[1200px] mx-auto mb-5'>
                     {imageUrls.map((imageUrl, index) => (
                         <div className='allimages' key={index}>
                             <img width={700} height={600} loading="lazy" src={imageUrl} alt={`Chapter ${chapterNumber} Image ${index + 1}`} />
                         </div>
                     ))}
+                </div> */}
+
+                <div className='max-w-[1200px] mx-auto mb-5'>
+                    {imageUrls.map((imageUrl, index) => (
+                        <React.Fragment key={index}>
+                            <div className='allimages'>
+                                <img
+                                    // width={700}
+                                    // height={600}
+                                    loading="lazy"
+                                    src={imageUrl}
+                                    alt={`Chapter ${chapterNumber} Image ${index + 1}`}
+                                />
+                            </div>
+
+                            {/* Insert ad after images 3, 4, and 7 */}
+                            {(index === 2 || index === 3 || index === 6) && (
+                                <ins
+                                    className="adsbygoogle"
+                                    style={{ display: 'block' }}
+                                    data-ad-client="ca-pub-1721485376950080"
+                                    data-ad-slot="9515651808"
+                                    data-ad-format="auto"
+                                    data-full-width-responsive="true"
+                                ></ins>
+                            )}
+                        </React.Fragment>
+                    ))}
                 </div>
+
+
+
+
 
                 {/* <div className='py-10 bg-[#0f0511]'>
                     <h2 className='text-4xl text-center text-[white] font-blod px-4 mb-10'>Comment Section</h2>
