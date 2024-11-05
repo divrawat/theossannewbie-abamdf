@@ -1,5 +1,5 @@
 export const DOMAIN = 'https://theossannewbieadventurer.online';
-// export const DOMAIN = 'https://iparryeverything.site';
+// export const DOMAIN = 'http://localhost:3000';
 
 export const DOMAIN_NAME = 'theossannewbieadventurer.online';
 
@@ -76,6 +76,7 @@ export const MANGA_SUMMARY = [
 
 
 export const navLinks = [
+    { text: 'Jinx Manga', href: `https://www.jinxmanga.in.net` },
     { text: 'Chapter 1', href: `${DOMAIN}/chapter-1` },
     { text: 'Chapter 2', href: `${DOMAIN}/chapter-2` },
     { text: 'Chapter 3', href: `${DOMAIN}/chapter-3` },
