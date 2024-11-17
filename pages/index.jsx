@@ -112,13 +112,13 @@ export default function Home() {
               </div>
 
               <div className="text-center">
-                <p className=" font-bold sm:text-[18px] text-[14px] mb-2">Type</p>
-                <p className="sm:text-[16px] text-[13px]">{MANGA_TYPE}</p>
+                <p className="font-bold sm:text-[18px] text-[14px] mb-2">Author</p>
+                <p className="sm:text-[16px] text-[13px]">{MANGA_AUTHOR}</p>
               </div>
 
               <div className="text-center">
-                <p className="font-bold sm:text-[18px] text-[14px] mb-2">Author</p>
-                <p className="sm:text-[16px] text-[13px]">{MANGA_AUTHOR}</p>
+                <p className=" font-bold sm:text-[18px] text-[14px] mb-2">Type</p>
+                <p className="sm:text-[16px] text-[13px]">{MANGA_TYPE}</p>
               </div>
 
             </div>
@@ -131,7 +131,7 @@ export default function Home() {
 
 
         <h2 id="readmanga" className="font-extrabold text-3xl my-10 px-4 text-center">
-          <Link href={DOMAIN} className="hover:underline text-[white]">{`Read ${MANGA_NAME} Manga Online`}</Link>
+          <Link href={DOMAIN} className="hover:underline text-[white]">{`${MANGA_NAME} Manga Online`}</Link>
         </h2>
 
         <AdSense />

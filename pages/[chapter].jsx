@@ -36,7 +36,7 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
     const nextChapter = chapterIndex < totalChapters - 1 ? chaptersData[chapterIndex + 1].chapterNumber : null;
 
 
-    const DESCRIPTION = `${MANGA_NAME} chapter ${chapterNumber} online HD Quality.${MANGA_NAME} (Shinmai Ossan Bouken-Sha, Saikyou Paati Ni Shinu Hodo Kitae Rarete Muteki Ni Naru) is a manga about a 32-year-old former guild clerk named Rick Gladiator who decides to become an adventurer. Despite his age, he possesses incredible strength due to two years of rigorous training with the continent's most powerful party, Orichalcum Fist.`;
+    const DESCRIPTION = `${MANGA_NAME} chapter ${chapterNumber} online HD Quality. Rick Gladiator, a 32-year-old former clerk at the adventurer's guild, decides to change his life by taking the guild’s preliminary examinations to become an adventurer himself. Despite his determination, many dismiss him because of his age. However, Rick quickly silences his doubters with an impressive display of strength and skill, earning the admiration of onlookers.`;
     const URL = params.chapter;
 
 

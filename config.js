@@ -8,7 +8,7 @@ export const IMAGES_SUBDOMAIN_LOGO = 'https://images.mangachimp.com';
 
 // export const MANGA_DESCRIPTION0 = `<a href="${DOMAIN}"><u><b>Vinland Saga</b></u></a>`;
 
-export const MANGA_DESCRIPTION = `<a href="${DOMAIN}"><u><b>The Ossan Newbie Adventurer</b></u></a> (Shinmai Ossan Bouken-Sha, Saikyou Paati Ni Shinu Hodo Kitae Rarete Muteki Ni Naru) is a manga about a 32-year-old former guild clerk named Rick Gladiator who decides to become an adventurer. Despite his age, he possesses incredible strength due to two years of rigorous training with the continent's most powerful party, Orichalcum Fist.`;
+export const MANGA_DESCRIPTION = `<a href="${DOMAIN}"><u><b>The Ossan Newbie Adventurer</b></u></a> (Shinmai Ossan Bouken-Sha, Saikyou Paati Ni Shinu Hodo Kitae Rarete Muteki Ni Naru) is a manga in which Rick Gladiator, a 32-year-old former clerk at the adventurer's guild, decides to change his life by taking the guild’s preliminary examinations to become an adventurer himself. Despite his determination, many dismiss him because of his age. However, Rick quickly silences his doubters with an impressive display of strength and skill, earning the admiration of onlookers.`;
 
 
 
@@ -45,10 +45,10 @@ export const APP_DESCRIPTION = `Read ${MANGA_NAME} manga online at ${DOMAIN}.`;
 export const DISQUS_SHORTNAME = "my-cms-7";
 
 export const navLinks = [
-    { text: 'Jinx Manga', href: `https://www.jinxmanga.in.net` },
+    { text: 'operation True Love', href: `https://ww1.operationtruelove.in.net/` },
     { text: 'Chapter 1', href: `${DOMAIN}/chapter-1` },
-    { text: 'Chapter 2', href: `${DOMAIN}/chapter-2` },
-    { text: 'Chapter 3', href: `${DOMAIN}/chapter-3` },
+    { text: 'Chapter 2', href: `${DOMAIN}/chapter-25` },
+    { text: 'Chapter 3', href: `${DOMAIN}/chapter-50` },
 ];
 
 export const FooterLinks = [
