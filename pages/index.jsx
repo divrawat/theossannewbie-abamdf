@@ -40,7 +40,7 @@ export default function Home() {
       "@id": `${DOMAIN}`
     },
     "headline": `${MANGA_NAME}`,
-    "description": `${DESCRIPTION}`,
+    "description": `${HEADER_MANGA_DESC}`,
     "image": `${DOMAIN}/cover1.webp`,
     "author": {
       "@type": "Person",
