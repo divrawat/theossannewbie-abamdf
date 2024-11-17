@@ -31,104 +31,31 @@ export default function Home() {
 
   const genres = MANGA_GENRE.split(', ');
 
-
-
-  const schema = {
+  const schema =
+  {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebPage",
-        "@id": `${DOMAIN}`,
-        "url": `${DOMAIN}`,
-        "name": `Read ${MANGA_NAME} Manga Online in a very high quality`,
-        "isPartOf": {
-          "@id": `${DOMAIN}/#website`
-        },
-        "about": {
-          "@id": `${DOMAIN}/#/schema/person/4c3ee266c98401p552c9dc20248895eb`
-        },
-        "primaryImageOfPage": {
-          "@id": `${DOMAIN}/#primaryimage`
-        },
-        "image": {
-          "@id": `${DOMAIN}/#primaryimage`
-        },
-        "thumbnailUrl": `${COVER_IMG}`,
-        // "datePublished": "2019-05-24T22:29:53+00:00",
-        // "dateModified": "2024-01-13T01:17:47+00:00",
-        "description": `${APP_DESCRIPTION}`,
-        "breadcrumb": {
-          "@id": `${DOMAIN}/#breadcrumb`
-        },
-        "inLanguage": "en-US",
-        "potentialAction": [
-          {
-            "@type": "ReadAction",
-            "target": [`${DOMAIN}`]
-          }
-        ]
-      },
-      {
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `${DOMAIN}`
+    },
+    "headline": `${MANGA_NAME}`,
+    "description": `${DESCRIPTION}`,
+    "image": `${DOMAIN}/cover1.webp`,
+    "author": {
+      "@type": "Person",
+      "name": `${MANGA_NAME} Team`,
+      "url": `${AUTHOR_PAGE}`
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": `${APP_NAME}`,
+      "logo": {
         "@type": "ImageObject",
-        "inLanguage": "en-US",
-        "@id": `${DOMAIN}/#primaryimage`,
-        "url": `${COVER_IMG}`,
-        "contentUrl": `${COVER_IMG}`,
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": `${DOMAIN}/#breadcrumb`,
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home"
-          }
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": `${DOMAIN}/#website`,
-        "url": `${DOMAIN}`,
-        "name": `${MANGA_NAME} ${MANGA_TYPE} Online`,
-        "description": `Read ${MANGA_NAME} ${MANGA_TYPE} Online in High Quality`,
-        "publisher": {
-          "@id": `${DOMAIN}/#/schema/person/4c3ee266c98401p552c9dc20248825ei`
-        },
-        "potentialAction": [
-          {
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": `${DOMAIN}/?s={search_term_string}`
-            },
-            "query-input": "required name=search_term_string"
-          }
-        ],
-        "inLanguage": "en-US"
-      },
-      {
-        "@type": ["Person", "Organization"],
-        "@id": `${DOMAIN}/#/schema/person/4c3ee266c98401p552c9dc20248825eb`,
-        "name": "admin",
-        "image": {
-          "@type": "ImageObject",
-          "inLanguage": "en-US",
-          "@id": `${DOMAIN}/#/schema/person/image/`,
-          "url": "https://secure.gravatar.com/avatar/b0077h86d4a8fb469cbb3820ed16bf77?s=96&d=monsterid&r=g",
-          "contentUrl": "https://secure.gravatar.com/avatar/b0077h86d4a8fb469cbb3820ed16bf77?s=96&d=monsterid&r=g",
-          "caption": "admin"
-        },
-        "logo": {
-          "@id": `${DOMAIN}/#/schema/person/image/`
-        }
+        "url": `${LOGO_URL}`
       }
-    ]
-  };
-
-
-
-
+    },
+  }
 
   const head = () => (
     <Head>
@@ -143,21 +70,11 @@ export default function Home() {
       <meta property="og:site_name" content={`${APP_NAME}`} />
       <meta property="og:image" content={`${COVER_IMG}`} />
       <meta property="og:image:secure_url" content={`${COVER_IMG}`} />
-      <meta property="og:image:type" content="image/jpg" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={`${MANGA_NAME} ${MANGA_TYPE} Online`} />
-      <meta name="twitter:description" content={HEADER_MANGA_DESC} />
-
+      <meta property="og:image:type" content="image/webp" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <meta name="keywords" content="the ossan newbie adventurer, the ossan newbie adventurer manga, the ossan newbie adventurer manhwa, read the ossan newbie adventurer, the ossan newbie adventurer anime, the ossan newbie adventurer read, baca komik the ossan newbie adventurer, baca the ossan newbie adventurer, the ossan newbie adventurer online, sololeveling, the ossan newbie adventurer 1, the ossan newbie adventurer chapter 1, the ossan newbie adventurer webtoon, manga like the ossan newbie adventurer, the ossan newbie adventurer comic, the ossan newbie adventurer1, solo max leveling, the ossan newbie adventurer 147, the ossan newbie adventurer 169, the ossan newbie adventurer light novel, the ossan newbie adventurer manga online, the ossan newbie adventurer read online, the ossan newbie adventurer 149, manga the ossan newbie adventurer, the ossan newbie adventurer 165, the ossan newbie adventurer reddit, only i level up, leveling solo, read solo levelling, the ossan newbie adventurer 168, the ossan newbie adventurer 170, read the ossan newbie adventurer online, the ossan newbie adventurer eng, the ossan newbie adventurer chapter, level up alone, baca manga the ossan newbie adventurer, manhwa like the ossan newbie adventurer, manhwa the ossan newbie adventurer, the ossan newbie adventurer manga read, the ossan newbie adventurer komiku, baca manhwa the ossan newbie adventurer, the ossan newbie adventurer animation, beru the ossan newbie adventurer, anime the ossan newbie adventurer, the ossan newbie adventurer fandom, manhwa similar to the ossan newbie adventurer, manga similar to the ossan newbie adventurer, manga like the ossan newbie adventurer with op mc, solo max level newbie chapter 1, the ossan newbie adventurer manga free, the ossan newbie adventurer anime netflix, thomas andre the ossan newbie adventurer, webtoon the ossan newbie adventurer, manhwa like the ossan newbie adventurer with op mc, the ossan newbie adventurer netflix, sololeveling manga, anime like the ossan newbie adventurer, the ossan newbie adventurer mangago, the ossan newbie adventurer beru, solo levelling manhwa, the ossan newbie adventurer manhwa online, the ossan newbie adventurer 3, the ossan newbie adventurer thomas andre, level up alone manga, manga like the ossan newbie adventurer reddit, manhwa like the ossan newbie adventurer art, the ossan newbie adventurer ao3, level up manga, the ossan newbie adventurer 4, solo max level newbie manga, the ossan newbie adventurer ending, anime solo, the ossan newbie adventurer 5, the ossan newbie adventurer last chapter, the ossan newbie adventurer anime mappa, leveling manhwa, the ossan newbie adventurer anime studio, solo max level newbie manhwa, sololeveling anime, the ossan newbie adventurer 180, solo max newbie, manhwa with leveling system, solo level max, the ossan newbie adventurer 178, the ossan newbie adventurer 179, the ossan newbie adventurer 176, the ossan newbie adventurer volume 5"></meta>
     </Head >
   );
 
-
-
-  const handleRedirect = () => {
-    window.open('https://thampolsi.com/4/7457654', '_blank');
-  };
 
 
   useEffect(() => {
@@ -237,17 +154,6 @@ export default function Home() {
 
         <AdSense />
 
-        <div className="bg-[black] relative">
-          <div className="absolute inset-0 bg-black opacity-80"></div> {/* Dark overlay */}
-          <div className="pt-10 pb-10 max-w-[1100px] mx-auto px-5 text-[white] relative z-10">
-            <h2 className="text-center font-extrabold text-3xl">{`More About ${MANGA_NAME} Manga`}</h2>
-            {MANGA_SUMMARY.map(paragraph => (
-              <p className="py-7 leading-[2]" key={paragraph.id}>{paragraph.content}</p>
-            ))}
-          </div>
-        </div>
-
-
 
 
         <div className="text-white my-5">
@@ -256,17 +162,6 @@ export default function Home() {
             <div key={index} className="text-center p-1.5 hover:underline"><a href={`${DOMAIN}/chapter-${chapter.chapterNumber}`}>{`${MANGA_NAME} Chapter ${chapter.chapterNumber}`}</a></div>
           ))}
         </div>
-
-
-        <h2 className="text-3xl text-white text-center my-5">{`${MANGA_NAME} Images`}</h2>
-        <div className="flex justify-center"><img src={`${DOMAIN}/1.webp`} alt={`${MANGA_NAME} Images`} /></div>
-        <div className="flex justify-center"><img src={`${DOMAIN}/2.webp`} alt={`${MANGA_NAME} Images`} /></div>
-        <div className="flex justify-center"><img src={`${DOMAIN}/3.webp`} alt={`${MANGA_NAME} Images`} /></div>
-        <div className="flex justify-center"><img src={`${DOMAIN}/4.webp`} alt={`${MANGA_NAME} Images`} /></div>
-        <div className="flex justify-center"><img src={`${DOMAIN}/5.webp`} alt={`${MANGA_NAME} Images`} /></div>
-
-
-
 
 
       </article >

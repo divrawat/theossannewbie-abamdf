@@ -36,11 +36,11 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
     const nextChapter = chapterIndex < totalChapters - 1 ? chaptersData[chapterIndex + 1].chapterNumber : null;
 
 
-    const DESCRIPTION = `Read ${MANGA_NAME} chapter ${chapterNumber} online at ${DOMAIN_NAME}. All ${MANGA_NAME} latest manga and manhwa chapters in high quality english are always updated regularly at our website.`;
+    const DESCRIPTION = `${MANGA_NAME} chapter ${chapterNumber} online HD Quality.${MANGA_NAME} (Shinmai Ossan Bouken-Sha, Saikyou Paati Ni Shinu Hodo Kitae Rarete Muteki Ni Naru) is a manga about a 32-year-old former guild clerk named Rick Gladiator who decides to become an adventurer. Despite his age, he possesses incredible strength due to two years of rigorous training with the continent's most powerful party, Orichalcum Fist.`;
     const URL = params.chapter;
 
 
-    const schema00 =
+    const schema =
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
@@ -66,150 +66,6 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
         },
     }
 
-
-    const schema = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Article",
-                "@id": `${DOMAIN}/${URL}/#article`,
-                "isPartOf": {
-                    "@id": `${DOMAIN}/${URL}`,
-                },
-                "author": {
-                    "name": "Divyanshu Rawat",
-                    "@id": `${DOMAIN}/#/schema/person/7edc4ad8bsc84d70b9422d149194021p`,
-                },
-                "headline": `${MANGA_NAME} Chapter ${chapterNumber}`,
-                "mainEntityOfPage": {
-                    "@id": `${DOMAIN}/${URL}`
-                },
-                "wordCount": 150,
-                "commentCount": 34,
-                "publisher": {
-                    "@id": `${DOMAIN}/#organization`
-                },
-                "image": {
-                    "@id": `${IMAGES_SUBDOMAIN}/chapter-${chapterNumber}/1.webp`,
-                },
-                "thumbnailUrl": `${IMAGES_SUBDOMAIN}/chapter-${chapterNumber}/1.webp`,
-                "articleSection": ["Manga Series"],
-                "inLanguage": "en-US",
-                "potentialAction": [
-                    {
-                        "@type": "CommentAction",
-                        "name": "Comment",
-                        "target": [
-                            `${DOMAIN}/${URL}/#respond`
-                        ]
-                    }
-                ]
-            },
-            {
-                "@type": "WebPage",
-                "@id": `${DOMAIN}/${URL}`,
-                "url": `${DOMAIN}/${URL}`,
-                "name": `${MANGA_NAME} Chapter ${chapterNumber}`,
-                "isPartOf": {
-                    "@id": `${DOMAIN}/#website`
-                },
-                "primaryImageOfPage": {
-                    "@id": `${DOMAIN}/${URL}/#primaryimage`
-                },
-                "image": {
-                    "@id": `${DOMAIN}/${URL}/#primaryimage`
-                },
-                "thumbnailUrl": `${IMAGES_SUBDOMAIN}/chapter-${chapterNumber}/1.webp`,
-                "description": `Read ${MANGA_NAME} manga Online at ${DOMAIN_NAME} which is the best website for reading manga online in very high quality.`,
-                "breadcrumb": {
-                    "@id": `${DOMAIN}/${URL}/#breadcrumb`
-                },
-                "inLanguage": "en-US",
-                "potentialAction": [
-                    {
-                        "@type": "ReadAction",
-                        "target": [
-                            `${DOMAIN}/${URL}`
-                        ]
-                    }
-                ]
-            },
-            {
-                "@type": "ImageObject",
-                "inLanguage": "en-US",
-                "@id": `${DOMAIN}/${URL}/#primaryimage`,
-                "url": `${IMAGES_SUBDOMAIN}/chapter-${chapterNumber}/1.webp`,
-                "contentUrl": `${IMAGES_SUBDOMAIN}/chapter-${chapterNumber}/1.webp`,
-            },
-            {
-                "@type": "BreadcrumbList",
-                "@id": `${DOMAIN}/${URL}/#breadcrumb`,
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": `${DOMAIN}/`
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": `${MANGA_NAME} Chapter ${chapterNumber}`,
-                    }
-                ]
-            },
-            {
-                "@type": "WebSite",
-                "@id": `${DOMAIN}/#website`,
-                "url": `${DOMAIN}`,
-                "name": "My Manga Blog",
-                "description": `Read ${MANGA_NAME} manga Online at ${DOMAIN_NAME} which is the best website for reading manga online in very high quality.`,
-                "publisher": {
-                    "@id": `${DOMAIN}/#organization`
-                },
-                "potentialAction": [
-                    {
-                        "@type": "SearchAction",
-                        "target": {
-                            "@type": "EntryPoint",
-                            "urlTemplate": `${DOMAIN}/?s={search_term_string}`,
-                        },
-                        "query-input": {
-                            "@type": "PropertyValueSpecification",
-                            "valueRequired": true,
-                            "valueName": "search_term_string"
-                        }
-                    }
-                ],
-                "inLanguage": "en-US"
-            },
-            {
-                "@type": "Organization",
-                "@id": `${DOMAIN}/#organization`,
-                "name": "My Ossan Manga Blog",
-                "url": `${DOMAIN}`,
-                "logo": {
-                    "@type": "ImageObject",
-                    "inLanguage": "en-US",
-                    "@id": `${DOMAIN}/#/schema/logo/image/`,
-                    "url": `${LOGO_URL}`,
-                    "contentUrl": `${LOGO_URL}`,
-                    "width": 192,
-                    "height": 192,
-                    "caption": "My Ossan Manga Blog"
-                },
-                "sameAs": []
-            },
-            {
-                "@type": "Person",
-                "@id": `${DOMAIN}/#/schema/person/7edc4ad8p1cf4d70b7422c149194021b`,
-                "name": "Divyanshu Aggarwals Rawat"
-            }
-        ]
-    }
-
-
-
     const postUrl = `${DOMAIN}/chapter-${chapterNumber}`;
     const encodedTitle = `${MANGA_NAME} Chapter ${chapterNumber}`;
     const encodedUrl = postUrl;
@@ -221,10 +77,6 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
     const redditUrl = `https://www.reddit.com/submit?url=${encodedUrl}&title=${encodedTitle}`;
 
 
-
-    const handleRedirect = () => {
-        window.open('https://thampolsi.com/4/7457654', '_blank');
-    };
 
 
     const head = () => (
@@ -278,6 +130,11 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
                         <span className={` text-[12px]`}>Reddit</span>
                     </a>
 
+                    <a href={telegramUrl} className="flex gap-1 items-center bg-blue-600 rounded-md px-2 py-1">
+                        <span><FaTelegram /></span>
+                        <span className={` text-[12px]`}>Telegram</span>
+                    </a>
+
                     <a href={twitterUrl} className="flex gap-1 items-center bg-blue-500 rounded-md px-2 py-1">
                         <span><FaTwitter /></span>
                         <span className={`text-[12px]`}>Twitter</span>
@@ -285,10 +142,7 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
 
 
 
-                    <a href={telegramUrl} className="flex gap-1 items-center bg-blue-600 rounded-md px-2 py-1">
-                        <span><FaTelegram /></span>
-                        <span className={` text-[12px]`}>Telegram</span>
-                    </a>
+
 
                     <a href={whatsappUrl} className="flex gap-1 items-center bg-green-500 rounded-md px-2 py-1">
                         <span><IoLogoWhatsapp /></span>

@@ -1,4 +1,4 @@
-export const DOMAIN = 'https://theossannewbieadventurer.online';
+export const DOMAIN = 'https://ossannewbieadventurer.adoptedbyamurderousdukefamily.in.net';
 // export const DOMAIN = 'http://localhost:3000';
 
 export const DOMAIN_NAME = 'theossannewbieadventurer.online';
@@ -43,37 +43,6 @@ export const NavbarName = "The Ossan Newbie Adventurer";
 export const APP_DESCRIPTION = `Read ${MANGA_NAME} manga online at ${DOMAIN}.`;
 
 export const DISQUS_SHORTNAME = "my-cms-7";
-
-
-export const MANGA_SUMMARY = [
-    {
-        id: 1,
-        content: "The Ossan Newbie Adventurer is a manga series that follows the adventures of Rick Gladiator, a 32-year-old former guild clerk who decides to embark on a new life as an adventurer. Despite his age, Rick possesses exceptional strength and skill, thanks to two years of intensive training with the continent's most powerful party, Orichalcum Fist."
-    },
-    {
-        id: 2,
-        content: "Before his transformation, Rick was a timid and unassuming individual, content with his mundane job as a guild clerk. However, his life took a drastic turn when he witnessed the incredible feats of the Orichalcum Fist. Inspired by their strength and courage, Rick made the bold decision to leave his comfort zone and pursue his dream of becoming an adventurer."
-    },
-    {
-        id: 3,
-        content: "With the support of his former comrades, Rick embarks on a perilous journey into the unknown. As a newcomer to the world of adventuring, he faces numerous challenges and prejudices. Many underestimate him due to his age, believing that he is too old and out of shape to be a successful adventurer. However, Rick's determination and exceptional abilities quickly prove them wrong."
-    },
-    {
-        id: 4,
-        content: "Throughout the series, Rick encounters a variety of formidable foes, including powerful monsters, cunning bandits, and rival adventurers. He must use his strategic thinking, quick reflexes, and overwhelming strength to overcome these obstacles and emerge victorious. Along the way, he also forms new friendships and alliances, forging bonds with other adventurers who recognize his talent and potential."
-    },
-    {
-        id: 5,
-        content: "As Rick's reputation grows, he becomes a respected and feared figure in the adventuring world. However, his newfound fame also attracts the attention of dangerous enemies who seek to exploit his abilities for their own nefarious purposes. Rick must navigate the treacherous political landscape while remaining true to his principles and protecting those he cares about."
-    }
-
-
-
-
-];
-
-
-
 
 export const navLinks = [
     { text: 'Jinx Manga', href: `https://www.jinxmanga.in.net` },
