@@ -46,9 +46,9 @@ export const DISQUS_SHORTNAME = "my-cms-7";
 
 export const navLinks = [
     { text: 'operation True Love', href: `https://ww1.operationtruelove.in.net/` },
-    { text: 'Chapter 1', href: `${DOMAIN}/chapter-1` },
-    { text: 'Chapter 2', href: `${DOMAIN}/chapter-25` },
-    { text: 'Chapter 3', href: `${DOMAIN}/chapter-50` },
+    { text: 'Deva Downlaod', href: `https://github.com/Deva-Movie-HD-Download-2025` },
+    // { text: 'Chapter 2', href: `${DOMAIN}/chapter-25` },
+    // { text: 'Chapter 3', href: `${DOMAIN}/chapter-50` },
 ];
 
 export const FooterLinks = [
